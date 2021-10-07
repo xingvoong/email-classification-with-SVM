@@ -24,23 +24,18 @@ for example in examples:
     spam_vali_set_data = spam_vali.get("spam_vali_set_data")
     spam_vali_set_labels = spam_vali.get("spam_vali_set_labels")
     spam_predict = clf.predict(spam_vali_set_data)
-    accuracy_score = metrics.accuracy_score(spam_vali_set_labels, spam_predict)
+    accuracy_score = metrics.accuracy_score(spam_vali_set_labels,
+                                            spam_predict)
     error_rate[count] = 1 - accuracy_score
     count += 1
     # Accuracy
     print("Accuracy {}".
           format(example),
-          metrics.accuracy_score(spam_vali_set_labels, spam_predict))
+          accuracy_score)
 print("Error rate", error_rate)
 
 # error rate graph
 examples = [100, 200, 500, 1000, 2000, 4138]
-error_rate = [0.21083172147001938,
-              0.19148936170212771,
-              0.17311411992263059,
-              0.17988394584139267,
-              0.17601547388781436,
-              0.17698259187620891]
 plt.suptitle("Error rate graph for spam dataset")
 plt.xlabel("error rate")
 plt.ylabel("number of examples")
