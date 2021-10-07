@@ -1,0 +1,10 @@
+# data
+.mat
+
+# cache
+.cache
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
