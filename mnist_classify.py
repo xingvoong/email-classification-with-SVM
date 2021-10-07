@@ -23,24 +23,17 @@ for example in examples:
     mnist_vali_set_data = mnist_vali.get("mnist_vali_set_data")
     mnist_vali_set_labels = mnist_vali.get("mnist_vali_set_labels")
     mnist_predict = clf.predict(mnist_vali_set_data)
-    accuracy_score = metrics.accuracy_score(mnist_vali_set_labels, mnist_predict)
+    accuracy_score = metrics.accuracy_score(mnist_vali_set_labels,
+                                            mnist_predict)
     error_rate[count] = 1 - accuracy_score
     # Accuracy
-    print("Accuracy {}".format(example),
-          metrics.accuracy_score(mnist_vali_set_labels, mnist_predict))
+    print("Accuracy {}".format(example), accuracy_score)
     count += 1
 
 print("Error rate", error_rate)
 
 # error rate graph
 examples = [100, 200, 500, 1000, 2000, 5000, 10000]
-error_rate = [0.2671,
-              0.19589999999999996,
-              0.13819999999999999,
-              0.11839999999999995,
-              0.10970000000000002,
-              0.098300000000000054,
-              0.08879999999999999]
 plt.suptitle("Error rate graph for MNIST dataset")
 plt.xlabel("error rate")
 plt.ylabel("number of examples")
