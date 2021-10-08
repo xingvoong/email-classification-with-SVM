@@ -17,8 +17,8 @@ Data is in .mat file.  Each .mat files will load as a Python dictionary.  Each d
 There are three datasets for this project:
 - **mnist_data.mat:** contains data from the MNIST dataset. There are 60,000 labeled digit images for training and 10,000 digit images for testing. The images are grayscale, 28x28 pixels flattened. There are 10 possible labels for each image, namely, the digits 0–9.
 (insert picture of data here)
-- **spam data.mat**: contains featurized spam data. The labels are 1 for spam and 0 for ham
-- **cifar10 data.mat**: contains data from the CIFAR10 dataset. There are 50,000 labeled object images for training, and 10,000 object images for testing. The images are flattened 3x32x32 (3 color channels). The labels 0–9 correspond alphabetically to the categories. For example, 0 means airplane, 1 means automobile, 2 means bird, and so on.
+- **spam_data.mat**: contains featurized spam data. The labels are 1 for spam and 0 for ham
+- **cifar10_data.mat**: contains data from the CIFAR10 dataset. There are 50,000 labeled object images for training, and 10,000 object images for testing. The images are flattened 3x32x32 (3 color channels). The labels 0–9 correspond alphabetically to the categories. For example, 0 means airplane, 1 means automobile, 2 means bird, and so on.
 
 ## Data partitioning
 the code can be found in `data_partitioning.py`
