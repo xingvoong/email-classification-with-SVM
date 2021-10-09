@@ -1,0 +1,153 @@
+C value:  1e-09
+Accuracy for validation set 1: 0.738878143133
+Accuracy for validation set 2: 0.757253384913
+Accuracy for validation set 3: 0.742746615087
+Accuracy for validation set 4: 0.76499032882
+Accuracy for validation set 5: 0.74081237911
+The average accuracy for C = 1e-09:  0.748936170213
+
+C value:  1e-08
+Accuracy for validation set 1: 0.738878143133
+Accuracy for validation set 2: 0.757253384913
+Accuracy for validation set 3: 0.742746615087
+Accuracy for validation set 4: 0.76499032882
+Accuracy for validation set 5: 0.741779497099
+The average accuracy for C = 1e-08:  0.74912959381
+
+C value:  1e-07
+Accuracy for validation set 1: 0.738878143133
+Accuracy for validation set 2: 0.758220502901
+Accuracy for validation set 3: 0.743713733075
+Accuracy for validation set 4: 0.765957446809
+Accuracy for validation set 5: 0.743713733075
+The average accuracy for C = 1e-07:  0.750096711799
+
+C value:  1e-06
+Accuracy for validation set 1: 0.738878143133
+Accuracy for validation set 2: 0.761121856867
+Accuracy for validation set 3: 0.748549323017
+Accuracy for validation set 4: 0.769825918762
+Accuracy for validation set 5: 0.746615087041
+The average accuracy for C = 1e-06:  0.752998065764
+
+C value:  1e-05
+Accuracy for validation set 1: 0.744680851064
+Accuracy for validation set 2: 0.765957446809
+Accuracy for validation set 3: 0.758220502901
+Accuracy for validation set 4: 0.786266924565
+Accuracy for validation set 5: 0.747582205029
+The average accuracy for C = 1e-05:  0.760541586074
+
+C value:  0.0001
+Accuracy for validation set 1: 0.753384912959
+Accuracy for validation set 2: 0.765957446809
+Accuracy for validation set 3: 0.772727272727
+Accuracy for validation set 4: 0.785299806576
+Accuracy for validation set 5: 0.748549323017
+The average accuracy for C = 0.0001:  0.765183752418
+
+C value:  0.001
+Accuracy for validation set 1: 0.767891682785
+Accuracy for validation set 2: 0.780464216634
+Accuracy for validation set 3: 0.773694390716
+Accuracy for validation set 4: 0.799806576402
+Accuracy for validation set 5: 0.76499032882
+The average accuracy for C = 0.001:  0.777369439072
+
+C value:  0.01
+Accuracy for validation set 1: 0.785299806576
+Accuracy for validation set 2: 0.801740812379
+Accuracy for validation set 3: 0.802707930368
+Accuracy for validation set 4: 0.822050290135
+Accuracy for validation set 5: 0.792069632495
+The average accuracy for C = 0.01:  0.800773694391
+
+C value:  0.1
+Accuracy for validation set 1: 0.799806576402
+Accuracy for validation set 2: 0.814313346228
+Accuracy for validation set 3: 0.808510638298
+Accuracy for validation set 4: 0.824951644101
+Accuracy for validation set 5: 0.802707930368
+The average accuracy for C = 0.1:  0.810058027079
+
+C value:  1
+Accuracy for validation set 1: 0.801740812379
+Accuracy for validation set 2: 0.816247582205
+Accuracy for validation set 3: 0.810444874275
+Accuracy for validation set 4: 0.824951644101
+Accuracy for validation set 5: 0.805609284333
+The average accuracy for C = 1:  0.811798839458
+
+C value:  10
+Accuracy for validation set 1: 0.800773694391
+Accuracy for validation set 2: 0.822050290135
+Accuracy for validation set 3: 0.818181818182
+Accuracy for validation set 4: 0.829787234043
+Accuracy for validation set 5: 0.807543520309
+The average accuracy for C = 10:  0.815667311412
+
+C value:  100
+Accuracy for validation set 1: 0.831721470019
+Accuracy for validation set 2: 0.824951644101
+Accuracy for validation set 3: 0.828820116054
+Accuracy for validation set 4: 0.826885880077
+Accuracy for validation set 5: 0.808510638298
+The average accuracy for C = 100:  0.82417794971
+
+C value:  1000
+Accuracy for validation set 1: 0.780464216634
+Accuracy for validation set 2: 0.644100580271
+Accuracy for validation set 3: 0.797872340426
+Accuracy for validation set 4: 0.820116054159
+Accuracy for validation set 5: 0.639264990329
+The average accuracy for C = 1000:  0.736363636364
+
+C value:  10000
+Accuracy for validation set 1: 0.78916827853
+Accuracy for validation set 2: 0.769825918762
+Accuracy for validation set 3: 0.794003868472
+Accuracy for validation set 4: 0.81914893617
+Accuracy for validation set 5: 0.798839458414
+The average accuracy for C = 10000:  0.79419729207
+
+C value:  100000
+Accuracy for validation set 1: 0.788201160542
+Accuracy for validation set 2: 0.781431334623
+Accuracy for validation set 3: 0.815280464217
+Accuracy for validation set 4: 0.823017408124
+Accuracy for validation set 5: 0.672147001934
+The average accuracy for C = 100000:  0.776015473888
+
+C value:  1000000
+Accuracy for validation set 1: 0.801740812379
+Accuracy for validation set 2: 0.58413926499
+Accuracy for validation set 3: 0.586073500967
+Accuracy for validation set 4: 0.601547388781
+Accuracy for validation set 5: 0.772727272727
+The average accuracy for C = 1000000:  0.669245647969
+
+C value:  10000000
+Accuracy for validation set 1: 0.772727272727
+Accuracy for validation set 2: 0.823017408124
+Accuracy for validation set 3: 0.76499032882
+Accuracy for validation set 4: 0.552224371373
+Accuracy for validation set 5: 0.803675048356
+The average accuracy for C = 10000000:  0.74332688588
+
+C value:  100000000
+Accuracy for validation set 1: 0.785299806576
+Accuracy for validation set 2: 0.78916827853
+Accuracy for validation set 3: 0.60251450677
+Accuracy for validation set 4: 0.755319148936
+Accuracy for validation set 5: 0.733075435203
+The average accuracy for C = 100000000:  0.733075435203
+
+C value:  1000000000
+Accuracy for validation set 1: 0.780464216634
+Accuracy for validation set 2: 0.810444874275
+Accuracy for validation set 3: 0.780464216634
+Accuracy for validation set 4: 0.776595744681
+Accuracy for validation set 5: 0.744680851064
+The average accuracy for C = 1000000000:  0.778529980658
+
+The Best C value is: C = 100 with accuracy: 0.82417794971
