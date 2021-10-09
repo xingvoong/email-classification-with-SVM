@@ -24,7 +24,7 @@ example of mnist_data:
 - **cifar10 data.mat**: contains data from the CIFAR10 dataset. There are 50,000 labeled object images for training, and 10,000 object images for testing. The images are flattened 3x32x32 (3 color channels). The labels 0–9 correspond alphabetically to the categories. For example, 0 means airplane, 1 means automobile, 2 means bird, and so on.
 example of cifar10_data:
 
-![cifar10](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/cifar10-dataset.png?token=AHX47RZX3HMBGGSPY75FQFLBMHAYQ)
+![cifar10](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/cifar10-dataset.png?token=AHX47R4MANBTKS6GROELNCTBMHBVY)
 
 ## Data partitioning
 the code can be found in `data_partitioning.py`
@@ -61,7 +61,7 @@ Error rate [0.22360000000000002, 0.1804, 0.1392,
 0.11280000000000001, 0.10499999999999998, 0.09389999999999998,
 0.09060000000000001]
 ```
-![mnist_error_rate_graph](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/mnist_error_rate_graph.png?token=AHX47RZGJP6BN7XOPHDGRPLBMHA6Y)
+![mnist_error_rate_graph](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/mnist_error_rate_graph.png?token=AHX47R7AQBS3P3VB7TEQR4DBMHBYA)
 - **spam**:
 ```
 Accuracy 100 0.7678916827852998
@@ -147,7 +147,7 @@ python --version
 Install dependencies
 ```bash
 pip install scikit-learn scipy numpy matplotlib
-
+```
 ## Requirements
 - Python 3
 - Linux, macOS, or Windows
