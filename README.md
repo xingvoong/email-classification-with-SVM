@@ -1,9 +1,10 @@
-# Email Classifer with SVM
+# Email Classification with SVM
 this project covers data partitioning, ham and spam email classification with support vector machines (SVM),
 hyperparameter tuning and k fold cross validation.
 ## Checklist
 - [ ] change repo name to **Email Classifer with SVM**
-- [ ] Insert picture for data example for mnist-dataset
+- [ ] Insert picture for data example for mnist-dataset and cifar10
+- [ ] Insert graph for error rate
 
 ## Authors
 - [@xingvoong](https://github.com/xingvoong)
@@ -39,7 +40,72 @@ The number of training examples in the experiment varies per dataset.
     - spam: word frequencies
     - cifar10: raw pixels
 
+### Classification Accuracy
+the code are in `mnist_classify.py`, `spam_classify.py`, `cifar10_classify.py`
+- **mnist**:
+```bash
+Accuracy 100 0.7764
+Accuracy 200 0.8196
+Accuracy 500 0.8608
+Accuracy 1000 0.8872
+Accuracy 2000 0.895
+Accuracy 5000 0.9061
+Accuracy 10000 0.9094
 
+Error rate [0.22360000000000002, 0.1804, 0.1392,
+0.11280000000000001, 0.10499999999999998, 0.09389999999999998,
+0.09060000000000001]
+```
+- **spam**:
+```
+Accuracy 100 0.7678916827852998
+Accuracy 200 0.7882011605415861
+Accuracy 500 0.7940038684719536
+Accuracy 1000 0.7969052224371374
+Accuracy 2000 0.7998065764023211
+Accuracy 4138 0.7998065764023211
 
+Error rate [0.23210831721470015,
+0.21179883945841393,
+0.2059961315280464,
+0.20309477756286265,
+0.2001934235976789,
+0.2001934235976789]
+```
+- **cifar10**:
+```
+Accuracy 100 0.2364
+Accuracy 200 0.2536
+Accuracy 500 0.2836
+Accuracy 1000 0.2906
+Accuracy 2000 0.3202
+Accuracy 5000 0.3094
 
-## Performance Report
+Error rate [0.7636000000000001,
+0.7464,
+0.7163999999999999,
+0.7094,
+0.6798,
+0.6906]
+```
+
+## Hyperparameter Tuning
+code: `hyperparam_tuning.py`
+
+- To improve the accuracy, I explored hyperparameter tuning with the regularization parameter or C value, on the mnist dataset.
+- To choose a hyperparameter value, I trained the model repeatedly with different hyperparameters, range from 10 to power of -9 to 9.
+- The best accuracy occurred at 1e-06, with 93.41%.
+- Before generating predictions for the test set,  I retrained the model using all the labeled data and the newly determined hyperparameter
+
+## K-Fold Cross-Validation
+code: `k_fold_cross_validation.py`
+- Since the spam dataset is relatively small dataset. I used k-fold cross-validation, with k = 5 for spam dataset to improve performance.
+- Achieved the best accuracy of 82.42% at C = 100.
+
+## Performance Summary
+For three datasets:
+- Fitted the model and then used it to predict the validation set.
+- Used a classification accuracy score to calculate accuracy and error rate.
+    - **mnist dataset:** the best accuracy is 93.41%, achieved at C value equals 1e-06
+    - **spam**: the best accuracy is 83.49% accuracy, at C = 100
+    - **cifar10**: the best accuracy is 39.43%, at C = 10⁸.
