@@ -18,7 +18,7 @@ There are three datasets for this project:
 - **mnist_data.mat:** contains data from the MNIST dataset. There are 60,000 labeled digit images for training and 10,000 digit images for testing. The images are grayscale, 28x28 pixels flattened. There are 10 possible labels for each image, namely, the digits 0–9.
 example of mnist_data:
 
-![mnist_data](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/mnist-dataset.png?token=AHX47R2T7FIWRNI7SN2DC23BMHAV6)
+![mnist_data](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/mnist-dataset.png?token=AHX47R2FCLIIKECXHVEDKUTBMHBLQ)
 
 - **spam data.mat**: contains featurized spam data. The labels are 1 for spam and 0 for ham
 - **cifar10 data.mat**: contains data from the CIFAR10 dataset. There are 50,000 labeled object images for training, and 10,000 object images for testing. The images are flattened 3x32x32 (3 color channels). The labels 0–9 correspond alphabetically to the categories. For example, 0 means airplane, 1 means automobile, 2 means bird, and so on.
@@ -128,15 +128,15 @@ Go to the project directory
 ```
 cd email-classification-with-SVM
 ```
-Download the data in [here](https://drive.google.com/drive/folders/1iknXeSFmPjvSfySFEIZFnFXIvziYyLF2?usp=sharing).  Put the dataset inside email-classification-with-SV directory.
+Download the data in [here](https://drive.google.com/drive/folders/1iknXeSFmPjvSfySFEIZFnFXIvziYyLF2?usp=sharing).  Put the datasets inside email-classification-with-SV directory.
 Your directory should look like this:
 ```bash
 email-classification-with-SVM username$ ls
-README.md			         data_partitioning.py		mnist_data.mat
-cifar10_classify.py		     demo				        spam_classify.py
-cifar10_data.mat		     hyperparam_tuning.py		spam_data.mat
-cross_validation_result.txt	 k_fold_cross_validation.py	tuning_results.txt
-csv_converter.py		     mnist_classify.py
+README.md			data_partitioning.py		mnist_data.mat
+cifar10_classify.py		demo				spam_classify.py
+cifar10_data.mat		hyperparam_tuning.py		spam_data.mat
+cross_validation_result.txt	k_fold_cross_validation.py	tuning_results.txt
+csv_converter.py		mnist_classify.py
 ```
 
 The project runs in python3.  To check for python version
