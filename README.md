@@ -33,7 +33,7 @@ Train a linear support vector machine (SVM) on all three datasets. Plot the erro
 and validation sets versus the number of training examples that are used to train the classifier.
 The number of training examples in the experiment varies per dataset.
 
-- **Model evaluation:** classification accuracy for error rate
+- **Model evaluation:** classification accuracy score.
 - **Features**:
     - mnist: raw pixels
     - spam: word frequencies
