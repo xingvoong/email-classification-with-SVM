@@ -1,10 +1,6 @@
 # Email Classification with SVM
 this project covers data partitioning, ham and spam email classification with support vector machines (SVM),
 hyperparameter tuning and k fold cross validation.
-## Checklist
-- [ ] change repo name to **Email Classifer with SVM**
-- [ ] Insert picture for data example for mnist-dataset and cifar10
-- [ ] Insert graph for error rate
 
 ## Authors
 - [@xingvoong](https://github.com/xingvoong)
@@ -22,13 +18,13 @@ There are three datasets for this project:
 - **mnist_data.mat:** contains data from the MNIST dataset. There are 60,000 labeled digit images for training and 10,000 digit images for testing. The images are grayscale, 28x28 pixels flattened. There are 10 possible labels for each image, namely, the digits 0–9.
 example of mnist_data:
 
-![mnist_data](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/mnist-dataset.png?token=AHX47R7UDV3HM7X3XMX54KDBME5IA)
+![mnist_data](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/mnist-dataset.png?token=AHX47R57ZN5JQ4GAILKZZIDBME6CS)
 
 - **spam data.mat**: contains featurized spam data. The labels are 1 for spam and 0 for ham
 - **cifar10 data.mat**: contains data from the CIFAR10 dataset. There are 50,000 labeled object images for training, and 10,000 object images for testing. The images are flattened 3x32x32 (3 color channels). The labels 0–9 correspond alphabetically to the categories. For example, 0 means airplane, 1 means automobile, 2 means bird, and so on.
 example of cifar10_data:
 
-![cifar10](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/cifar10-dataset.png?token=AHX47R6DVGCVBNLP3FZHJHTBME5KI)
+![cifar10](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/cifar10-dataset.png?token=AHX47R3L6MWC2Z5ZXFISTR3BME6FS)
 
 ## Data partitioning
 the code can be found in `data_partitioning.py`
@@ -47,11 +43,11 @@ The number of training examples in the experiment varies per dataset.
 - **Features**:
     - mnist: raw pixels
     - spam: word frequencies
-    - cifar10: raw pixels
+    - cifar10: raw pixels 
 
 ### Classification Accuracy
 the code are in `mnist_classify.py`, `spam_classify.py`, `cifar10_classify.py`
-- **mnist**:
+- **mnist**: 
 ```bash
 Accuracy 100 0.7764
 Accuracy 200 0.8196
@@ -76,10 +72,10 @@ Accuracy 2000 0.7998065764023211
 Accuracy 4138 0.7998065764023211
 
 Error rate [0.23210831721470015,
-0.21179883945841393,
-0.2059961315280464,
-0.20309477756286265,
-0.2001934235976789,
+0.21179883945841393, 
+0.2059961315280464, 
+0.20309477756286265, 
+0.2001934235976789, 
 0.2001934235976789]
 ```
 ![spam_error_rate_graph](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/spam_error_rate_graph.png?token=AHX47R7RGH5PUT5IIHTWRILBME5VO)
@@ -93,16 +89,16 @@ Accuracy 1000 0.2906
 Accuracy 2000 0.3202
 Accuracy 5000 0.3094
 
-Error rate [0.7636000000000001,
-0.7464,
-0.7163999999999999,
-0.7094,
-0.6798,
+Error rate [0.7636000000000001, 
+0.7464, 
+0.7163999999999999, 
+0.7094, 
+0.6798, 
 0.6906]
 ```
 ![cifar10_error_rate_graph](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/cifar10_error_rate_graph.png?token=AHX47R76FG53AXZHATGYAEDBME5YA)
 ## Hyperparameter Tuning
-code: `hyperparam_tuning.py`
+code: `hyperparam_tuning.py` 
 
 - To improve the accuracy, I explored hyperparameter tuning with the regularization parameter or C value, on the mnist dataset.
 - To choose a hyperparameter value, I trained the model repeatedly with different hyperparameters, range from 10 to power of -9 to 9.
@@ -116,11 +112,11 @@ code: `k_fold_cross_validation.py`
 
 ## Performance Summary
 For three datasets:
-- Fitted the model and then used it to predict the validation set.
-- Used a classification accuracy score to calculate accuracy and error rate.
+- Fitted the model and then used it to predict the validation set.  
+- Used a classification accuracy score to calculate accuracy and error rate.  
     - **mnist dataset:** the best accuracy is 93.41%, achieved at C value equals 1e-06
     - **spam**: the best accuracy is 83.49% accuracy, at C = 100
-    - **cifar10**: the best accuracy is 39.43%, at C = 10⁸.
+    - **cifar10**: the best accuracy is 39.43%, at C = 10⁸. 
 
 ## Run Locally
 Clone the project
