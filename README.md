@@ -10,16 +10,25 @@ hyperparameter tuning and k fold cross validation.
 - [@xingvoong](https://github.com/xingvoong)
 
 ## Data
-Data is in .mat file.  Each .mat files will load as a Python dictionary.  Each dictionary contains three fields:
+To download the data for this project, visit [this google drive folder](https://drive.google.com/drive/folders/1iknXeSFmPjvSfySFEIZFnFXIvziYyLF2?usp=sharing)
+
+
+Data is in `.mat` file.  Each `.mat` files will load as a Python dictionary.  Each dictionary contains three fields:
 - **training_data**, the training set features. Rows are samples and columns are features.
 - **training labels**, the training set labels. Rows are samples. There is one column: The label for each sample.
-- **test data**, the test set features. Rows are samples and columns are features.  Fits a model to predict the labels for this test set, and submit those predictions to Kaggle.
+- **test data**, the test set features. Rows are samples and columns are features.
 
 There are three datasets for this project:
 - **mnist_data.mat:** contains data from the MNIST dataset. There are 60,000 labeled digit images for training and 10,000 digit images for testing. The images are grayscale, 28x28 pixels flattened. There are 10 possible labels for each image, namely, the digits 0–9.
-(insert picture of data here)
+example of mnist_data:
+
+![mnist_data](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/mnist-dataset.png?token=AHX47R7UDV3HM7X3XMX54KDBME5IA)
+
 - **spam data.mat**: contains featurized spam data. The labels are 1 for spam and 0 for ham
 - **cifar10 data.mat**: contains data from the CIFAR10 dataset. There are 50,000 labeled object images for training, and 10,000 object images for testing. The images are flattened 3x32x32 (3 color channels). The labels 0–9 correspond alphabetically to the categories. For example, 0 means airplane, 1 means automobile, 2 means bird, and so on.
+example of cifar10_data:
+
+![cifar10](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/cifar10-dataset.png?token=AHX47R6DVGCVBNLP3FZHJHTBME5KI)
 
 ## Data partitioning
 the code can be found in `data_partitioning.py`
@@ -56,6 +65,7 @@ Error rate [0.22360000000000002, 0.1804, 0.1392,
 0.11280000000000001, 0.10499999999999998, 0.09389999999999998,
 0.09060000000000001]
 ```
+![mnist_error_rate_graph](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/mnist_error_rate_graph.png?token=AHX47RYF4BC44CRDZXLNKT3BME5SA)
 - **spam**:
 ```
 Accuracy 100 0.7678916827852998
@@ -72,6 +82,8 @@ Error rate [0.23210831721470015,
 0.2001934235976789,
 0.2001934235976789]
 ```
+![spam_error_rate_graph](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/spam_error_rate_graph.png?token=AHX47R7RGH5PUT5IIHTWRILBME5VO)
+
 - **cifar10**:
 ```
 Accuracy 100 0.2364
@@ -88,7 +100,7 @@ Error rate [0.7636000000000001,
 0.6798,
 0.6906]
 ```
-
+![cifar10_error_rate_graph](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/cifar10_error_rate_graph.png?token=AHX47R76FG53AXZHATGYAEDBME5YA)
 ## Hyperparameter Tuning
 code: `hyperparam_tuning.py`
 
@@ -109,3 +121,27 @@ For three datasets:
     - **mnist dataset:** the best accuracy is 93.41%, achieved at C value equals 1e-06
     - **spam**: the best accuracy is 83.49% accuracy, at C = 100
     - **cifar10**: the best accuracy is 39.43%, at C = 10⁸.
+
+## Run Locally
+Clone the project
+```bash
+https://github.com/xingvoong/email-classification-with-SVM
+```
+Go to the project directory
+```
+cd email-classification-with-SVM
+```
+
+The project runs in python3.  To check for python version
+```bash
+python --version
+```
+
+Install dependencies
+```bash
+pip install scikit-learn scipy numpy matplotlib
+```
+
+## Requirements
+- Python 3
+- Linux, macOS, or Windows
