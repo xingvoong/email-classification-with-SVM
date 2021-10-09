@@ -1,4 +1,4 @@
-# Email Classifer with SVM
+# Email Classification with SVM
 this project covers data partitioning, ham and spam email classification with support vector machines (SVM),
 hyperparameter tuning and k fold cross validation.
 ## Checklist
