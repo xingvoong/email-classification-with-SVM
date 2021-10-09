@@ -18,13 +18,13 @@ There are three datasets for this project:
 - **mnist_data.mat:** contains data from the MNIST dataset. There are 60,000 labeled digit images for training and 10,000 digit images for testing. The images are grayscale, 28x28 pixels flattened. There are 10 possible labels for each image, namely, the digits 0–9.
 example of mnist_data:
 
-![mnist_data](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/mnist-dataset.png?token=AHX47R57ZN5JQ4GAILKZZIDBME6CS)
+![mnist_data](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/mnist-dataset.png?token=AHX47R2T7FIWRNI7SN2DC23BMHAV6)
 
 - **spam data.mat**: contains featurized spam data. The labels are 1 for spam and 0 for ham
 - **cifar10 data.mat**: contains data from the CIFAR10 dataset. There are 50,000 labeled object images for training, and 10,000 object images for testing. The images are flattened 3x32x32 (3 color channels). The labels 0–9 correspond alphabetically to the categories. For example, 0 means airplane, 1 means automobile, 2 means bird, and so on.
 example of cifar10_data:
 
-![cifar10](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/cifar10-dataset.png?token=AHX47R3L6MWC2Z5ZXFISTR3BME6FS)
+![cifar10](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/cifar10-dataset.png?token=AHX47RZX3HMBGGSPY75FQFLBMHAYQ)
 
 ## Data partitioning
 the code can be found in `data_partitioning.py`
@@ -61,7 +61,7 @@ Error rate [0.22360000000000002, 0.1804, 0.1392,
 0.11280000000000001, 0.10499999999999998, 0.09389999999999998,
 0.09060000000000001]
 ```
-![mnist_error_rate_graph](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/mnist_error_rate_graph.png?token=AHX47RYF4BC44CRDZXLNKT3BME5SA)
+![mnist_error_rate_graph](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/mnist_error_rate_graph.png?token=AHX47RZGJP6BN7XOPHDGRPLBMHA6Y)
 - **spam**:
 ```
 Accuracy 100 0.7678916827852998
@@ -78,7 +78,7 @@ Error rate [0.23210831721470015,
 0.2001934235976789, 
 0.2001934235976789]
 ```
-![spam_error_rate_graph](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/spam_error_rate_graph.png?token=AHX47R7RGH5PUT5IIHTWRILBME5VO)
+![spam_error_rate_graph](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/spam_error_rate_graph.png?token=AHX47RY3BEGGTPYUWBP4LS3BMHBB4)
 
 - **cifar10**:
 ```
@@ -96,7 +96,7 @@ Error rate [0.7636000000000001,
 0.6798, 
 0.6906]
 ```
-![cifar10_error_rate_graph](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/cifar10_error_rate_graph.png?token=AHX47R76FG53AXZHATGYAEDBME5YA)
+![cifar10_error_rate_graph](https://raw.githubusercontent.com/xingvoong/email-classification-with-SVM/main/demo/cifar10_error_rate_graph.png?token=AHX47R2VRTTEE5U57XMHC2LBMHBDY)
 ## Hyperparameter Tuning
 code: `hyperparam_tuning.py` 
 
@@ -123,9 +123,20 @@ Clone the project
 ```bash
 https://github.com/xingvoong/email-classification-with-SVM
 ```
+
 Go to the project directory
 ```
 cd email-classification-with-SVM
+```
+Download the data in [here](https://drive.google.com/drive/folders/1iknXeSFmPjvSfySFEIZFnFXIvziYyLF2?usp=sharing).  Put the dataset inside email-classification-with-SV directory.
+Your directory should look like this:
+```bash
+email-classification-with-SVM username$ ls
+README.md			         data_partitioning.py		mnist_data.mat
+cifar10_classify.py		     demo				        spam_classify.py
+cifar10_data.mat		     hyperparam_tuning.py		spam_data.mat
+cross_validation_result.txt	 k_fold_cross_validation.py	tuning_results.txt
+csv_converter.py		     mnist_classify.py
 ```
 
 The project runs in python3.  To check for python version
@@ -136,7 +147,6 @@ python --version
 Install dependencies
 ```bash
 pip install scikit-learn scipy numpy matplotlib
-```
 
 ## Requirements
 - Python 3
